@@ -1,0 +1,11 @@
+<section class="dishes">
+  <h2>Dishes from the backend</h2>
+  <ul>
+    @for (dish of dishes(); track dish.name) {
+      <li>{{ dish.name }} &mdash; {{ dish.cuisine }}</li>
+    }
+  </ul>
+</section>
+
+<app-nx-welcome></app-nx-welcome>
+<router-outlet></router-outlet>
